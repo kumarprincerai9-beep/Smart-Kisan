@@ -33,6 +33,12 @@ function showInfo() {
     else if(crop === "maize") {
         result.innerHTML = "🌾 मक्का: बुवाई - जून, खाद - नाइट्रोजन";
     }
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=YOUR_API_KEY&units=metric")
+.then(res => res.json())
+.then(data => {
+  document.getElementById("weather").innerHTML =
+    `Temp: ${data.main.temp}°C <br> Weather: ${data.weather[0].main}`;
+});
     else {
         result.innerHTML = "🥔 आलू: बुवाई - अक्टूबर, खाद - पोटाश";
     }
