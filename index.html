@@ -47,3 +47,46 @@
 <button onclick="login()">Login</button>
 
 <p id="msg"></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Kisan 🌱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌱 Smart Kisan</h1>
+
+<div class="container">
+
+  <!-- Weather -->
+  <div class="card">
+    <h2>🌦 Weather Info</h2>
+    <p id="weather">Loading...</p>
+  </div>
+
+  <!-- Crop -->
+  <div class="card">
+    <h2>📊 Crop Info</h2>
+    <ul>
+      <li>🌾 Wheat - Oct to March</li>
+      <li>🌽 Maize - June to Sept</li>
+      <li>🌱 Rice - June to Nov</li>
+    </ul>
+  </div>
+
+  <!-- Login -->
+  <div class="card">
+    <h2>🧑‍🌾 Farmer Login</h2>
+    <input type="text" id="user" placeholder="Name">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="msg"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
