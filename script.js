@@ -80,3 +80,4 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=${apiKey
 .catch(error => {
   document.getElementById("weather").innerText = "Weather load nahi ho raha ❌";
 });
+const apikey =14791e1ce82c2bc20bfd3f0b8c6ccc06
