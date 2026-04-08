@@ -68,3 +68,15 @@ function login() {
     document.getElementById("msg").innerText = "❌ Wrong Details";
   }
 }
+const apiKey = "YOUR_API_KEY";
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=${apiKey}&units=metric`)
+.then(response => response.json())
+.then(data => {
+  document.getElementById("weather").innerHTML =
+    `🌡 Temp: ${data.main.temp}°C <br>
+     ☁ Weather: ${data.weather[0].main}`;
+})
+.catch(error => {
+  document.getElementById("weather").innerText = "Weather load nahi ho raha ❌";
+});
