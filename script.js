@@ -43,3 +43,13 @@ function showInfo() {
         result.innerHTML = "🥔 आलू: बुवाई - अक्टूबर, खाद - पोटाश";
     }
 }
+function login() {
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
+
+  if (u === "farmer" && p === "1234") {
+    document.getElementById("msg").innerText = "Login Successful ✅";
+  } else {
+    document.getElementById("msg").innerText = "Wrong Details ❌";
+  }
+}
