@@ -53,3 +53,18 @@ function login() {
     document.getElementById("msg").innerText = "Wrong Details ❌";
   }
 }
+// Weather (demo)
+document.getElementById("weather").innerText =
+  "Temp: 25°C | Sunny ☀";
+
+// Login
+function login() {
+  let u = document.getElementById("user").value;
+  let p = document.getElementById("pass").value;
+
+  if (u === "farmer" && p === "1234") {
+    document.getElementById("msg").innerText = "✅ Login Success";
+  } else {
+    document.getElementById("msg").innerText = "❌ Wrong Details";
+  }
+}
