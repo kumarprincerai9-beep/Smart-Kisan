@@ -94,7 +94,7 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDy-GTdxSgxnWMRQ-0BV8WqLHjHz82WXXE",
+  apiKey: "14791e1ce82c2bc20bfd3f0b8c6ccc06",
   authDomain: "smart-kisan-3c2a0.firebaseapp.com",
   projectId: "smart-kisan-3c2a0",
   storageBucket: "smart-kisan-3c2a0.firebasestorage.app",
