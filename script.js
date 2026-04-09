@@ -33,7 +33,7 @@ function showInfo() {
     else if(crop === "maize") {
         result.innerHTML = "🌾 मक्का: बुवाई - जून, खाद - नाइट्रोजन";
     }
-        fetch("https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=YOUR_API_KEY&units=metric")
+        fetch("https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=14791e1ce82c2bc20bfd3f0b8c6ccc06&units=metric")
 .then(res => res.json())
 .then(data => {
   document.getElementById("weather").innerHTML =
@@ -68,7 +68,7 @@ function login() {
     document.getElementById("msg").innerText = "❌ Wrong Details";
   }
 }
-const apiKey= "abc123xyz456";
+const apiKey= "1471e1ce82c2bc20fd3f0b8c6ccc06";
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=${apiKey}&units=metric`)
 .then(response => response.json())
@@ -76,15 +76,10 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Dehradun&appid=${apiKey
   document.getElementById("weather").innerHTML =
     `🌡 Temp: ${data.main.temp}°C <br>
      ☁ Weather: ${data.weather[0].main}`;
-})
-.catch(error => {
-  document.getElementById("weather").innerText = "Weather load nahi ho raha ❌";
 });
 const apikey =14791e1ce82c2bc20bfd3f0b8c6ccc06
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-  apiKey: "abc123xyz456";
+import { initializeApp } from "firebase/app const firebaseConfig = {
+  apiKey: "14791e1ce82c2bc20fd3f0b8c6cc06";
   authDomain: "Smart-kisan.firebaseapp.com",
   projectId: "Smart-kishan-3c2a0.firebaseapp.com
 };
